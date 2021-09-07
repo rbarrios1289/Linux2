@@ -1,6 +1,14 @@
 
 from flask import Flask, redirect, url_for, render_template, request, session, flash
 from datetime import timedelta
+import mysql.connector
+
+connection = mysql.connector.connect (host='localhost',port='3307',
+                                        database='Linux2',
+                                        user='root',
+                                        password='mysql')
+
+cursor = connection.cursor()
 
 app = Flask(__name__)
 # basically used for encrypt and de-crypt data
@@ -18,8 +26,9 @@ def main():
 def showSignUp():
     return render_template('signup.html')    
 
-@app.route('/signUp')
-def signUp():
+# data input to database/call mysql
+#@app.route('/signUp')
+#def signUp():
     
 
 
