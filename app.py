@@ -3,12 +3,12 @@ from flask import Flask, redirect, url_for, render_template, request, session, f
 from datetime import timedelta
 import mysql.connector
 
-connection = mysql.connector.connect (host='localhost',port='3307',
-                                        database='Linux2',
-                                        user='root',
-                                        password='mysql')
+# connection = mysql.connector.connect (host='localhost',port='5000',
+#                                         database='Linux2',
+#                                         user='root',
+#                                         password='mysql')
 
-cursor = connection.cursor()
+# cursor = connection.cursor()
 
 app = Flask(__name__)
 # basically used for encrypt and de-crypt data
@@ -30,7 +30,6 @@ def showSignUp():
 #@app.route('/signUp')
 #def signUp():
     
-
 
 if __name__ == "__main__":
     app.run()
