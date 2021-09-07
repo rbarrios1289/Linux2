@@ -10,7 +10,18 @@ app = Flask(__name__)
 # Test set-up of flask
 @app.route("/")
 def main():
-    return "<h1>Welcome!</h1>"
+    #return "<h1>Welcome!</h1>"
+    return render_template('index.html')
+
+# Missing server-side method for the UI to interact with MySQL
+@app.route('/showSignUp')
+def showSignUp():
+    return render_template('signup.html')    
+
+@app.route('/signUp')
+def signUp():
+    
+
 
 if __name__ == "__main__":
     app.run()
