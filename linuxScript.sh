@@ -9,7 +9,9 @@ apt-get install apache2
 apt-get install mysql-server
 apt-get install php libapache2-mod-php php-mysql
 systemctl restart apache2
-mysql <testdb1.sql
+
+############ Need code from database-side
+mysql <db1.sql
 cp mysqlconnect.php /var/www/html/
 
 
@@ -39,3 +41,7 @@ cd
 git clone https://github.com/me2001ru/Linux2.git featuresBranch
 git checkout main
 cp featuresBranch (git add; git commit; git push)
+
+
+
+######################### Automate backups
