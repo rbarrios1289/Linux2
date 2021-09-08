@@ -3,11 +3,18 @@
 # add users here
 # set permissions
 
+######################## copied from Lesson 7 pdf
+apt-get update
+apt-get install apache2
+apt-get install mysql-server
+apt-get install php libapache2-mod-php php-mysql
+systemctl restart apache2
+mysql <testdb1.sql
+cp mysqlconnect.php /var/www/html/
 
 
-
-# add users to group
-# also check if group exist, if not add also new group
+######################## add users to group
+######################## also check if group exist, if not add also new group
 
 $groupDev = developers
 $user = ???
@@ -23,9 +30,9 @@ fi
 
 
 
-# what permissions do "other-group" have?
+########################## what permissions do "other-group" have?
 
-# get files from features-branch on git
+########################## get files from features-branch on git
 
 cd 
 
