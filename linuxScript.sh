@@ -45,3 +45,8 @@ cp featuresBranch (git add; git commit; git push)
 
 
 ######################### Automate backups
+######################## - What is important/relevant to backup?
+######################## - Where are the backups located?
+######################## - Who has access?
+######################## - How do we restore from backups?
+######################## - Encryption of the backups? 
